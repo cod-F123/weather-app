@@ -11,11 +11,13 @@ function Nav() {
             document.getElementById("toggle").style.backgroundColor = "#fff" ;
             document.getElementById("toggle").style.transform = "translateX(77px)";
             document.getElementById("body").ariaValueText = "dark";
+            document.getElementById("body").style.color = "#fff";
         }else{
             document.getElementById("body").style.backgroundColor = "#fff";
-            document.getElementById("toggle").style.backgroundColor = "#bbb" ;
+            document.getElementById("toggle").style.backgroundColor = "#bbb" 
             document.getElementById("toggle").style.transform = "translateX(0px)";
             document.getElementById("body").ariaValueText = "light";
+            document.getElementById("body").style.color = "#000";
         }
     }
 
