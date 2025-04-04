@@ -3,7 +3,7 @@ import axios from "axios";
 // Basic requirement
 const baseUrlWeather = "https://api.openweathermap.org/data/2.5";
 const baseUrlLocation = "http://api.openweathermap.org/geo/1.0";
-const APIKey = "910ea8a4d8d1e14f80885590fbbba732" ;
+const APIKey = "****************" ;
 
 async function Location(cityName) {
     const client = axios.create({
