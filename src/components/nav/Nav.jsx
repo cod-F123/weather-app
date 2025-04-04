@@ -5,7 +5,7 @@ function Nav() {
 
     const toggle = (e) => {
         const body = document.getElementById("body").ariaValueText ;
-        console.log(body);
+        
         if (body === "light"){
             document.getElementById("body").style.backgroundColor = "#7A1CAC";
             document.getElementById("toggle").style.backgroundColor = "#fff" ;
