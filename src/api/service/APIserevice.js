@@ -1,4 +1,3 @@
-import { wait } from "@testing-library/user-event/dist/utils";
 import axios from "axios";
 
 // Basic requirement
@@ -10,11 +9,10 @@ async function Location(cityName) {
     const client = axios.create({
         baseURL:baseUrlLocation
     });
-    console.log("1")
+    
     const data = await client(`/direct?q=${cityName}&limit=1&appid=${APIKey}`).then((res)=>{
         return res;
     }).catch((err)=>{
-        console.log(3)
         return err;
     });
 
@@ -23,7 +21,6 @@ async function Location(cityName) {
 
 async function WeatherApi(cityName) {
     const dataLocation = await Location(cityName);
-
     const client = axios.create({
         baseURL : baseUrlWeather
     });
@@ -33,7 +30,7 @@ async function WeatherApi(cityName) {
         return err;
     });
 
-    return data;
+    return data.data;
 }
 
 export default WeatherApi;
