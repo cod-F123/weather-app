@@ -1,0 +1,34 @@
+.navWrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.navWrapper img{
+    margin-top: 20px;
+    width: 100px;
+    height: 80px;
+}
+
+.toggle{
+    width: 100px;
+    height: 30px;
+    border: 2px solid #ddd;
+    box-shadow: 0px 0px 3px inset #ccc;
+    border-radius: 13px;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0px 2px;
+}
+
+.toggle span{
+    display: block;
+    border-radius: 50%;
+    background-color: #bbb;
+    width: 23px;
+    height: 23px;
+    cursor: pointer;
+    transition: all 400ms;
+}
+
